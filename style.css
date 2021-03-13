@@ -1,0 +1,83 @@
+:root {
+    --HeaderBgColor: rgb(146, 204, 205);
+    --HeaderTxtColor: rgb(50, 53, 62);
+    --maintxtColor: rgb(68, 88, 118);
+}
+
+body {
+    background-color: rgb(237, 237, 246);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #13293d;
+    color: #fff;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    color: var(--mainbgColor);
+    font-weight: bold;
+}
+
+nav li a {
+    color: var(--HeaderBgColor);
+    text-decoration: none;
+    border-bottom: 3px solid var(--HeaderBgColor);
+}
+
+#topTitle {
+    background-color: var(--HeaderBgColor);
+    color: var(--HeaderTxtColor);
+}
+
+#topTitle h1 {
+    color: var(--HeaderTxtColor);
+}
+
+.top-Area {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.top-Area > img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-text-overlay {
+    background-color: var(--HeaderBgColor);
+    color: var(--HeaderTxtColor);
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    padding: 10px;
+}
+
+.main-general {
+    display: flex;
+}
+
+.about-me-title {
+    display: flex;
+}
+
+.about-me-title > h1 {
+    color: var(--maintxtColor);
+    border-right: 3px solid;
+    margin-left: 100px;
+    margin-right: 10px;
+    text-align: right;
+    padding-right: 10px;
+}
