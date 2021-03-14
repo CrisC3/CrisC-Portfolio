@@ -187,6 +187,17 @@ nav li a {
         padding: 0;
     }
 
+    .row{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: -80px;
+    }
+
+    .topic-title {
+        margin: 0px;
+        padding-right: 0px;
+    }
+
     /* Formats mobile wrap container to display links at the bottom correctly */
     .mobile-wrap {
         display: flex;
