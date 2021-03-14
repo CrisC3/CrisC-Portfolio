@@ -6,7 +6,7 @@
 
 body {
     background-color: rgb(237, 237, 246);
-    /* margin-top: 1000px; /* Added margin-top to test a href links worked */
+   /* margin-top: 1000px; /* Added margin-top to test a href links worked */
 }
 
 header {
@@ -57,6 +57,22 @@ nav li a {
     object-fit: cover;
 }
 
+#personal-image {
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 50px;
+    z-index: 1;
+} 
+
+#personal-image img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #f0270d;
+    border-radius: 150px;
+} 
+
 .image-text-overlay {
     background-color: var(--HeaderBgColor);
     color: var(--HeaderTxtColor);
@@ -95,6 +111,7 @@ nav li a {
 .column-details {
     border-left: 3px solid var(--maintxtColor);
     padding-left: 10px;
+    justify-content: center;
 }
 
 .topic-title {
