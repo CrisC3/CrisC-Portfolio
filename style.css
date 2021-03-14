@@ -224,6 +224,7 @@ nav li a {
     }
 }
 
+/* Adjust selectors when screen is below 630 pixels */
 @media screen and (max-width: 630px) {
     
     /* Formats the header in a mobile screen */
@@ -239,24 +240,23 @@ nav li a {
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        background-color: rgb(49, 99, 99);
-        
+        background-color: rgb(49, 99, 99);        
     }
 
-    /* Formats the list items background and border */
+    /* Formats the list items background and border for mobile screen */
     header > nav > ul > li {
         color: white;
         border: 1px dashed white;
         line-height: 40px;
     }
 
-    /* Formats the list items a:href links text color and removes borders */
+    /* Formats the list items a:href links text color and removes borders for mobile screen */
     header > nav > ul > li > a {
         color: white;
         border-bottom: 0px none;
     }
 
-    /* Changes the header h1 font size of the Welcome to My Page */
+    /* Changes the header h1 font size of the Welcome to My Page for mobile screen */
     .image-text-overlay {
         bottom: 8%;
         right: 2%;
