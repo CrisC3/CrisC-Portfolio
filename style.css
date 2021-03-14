@@ -118,6 +118,14 @@ nav li a {
     flex: 1;
   }
 
+/* Generic selector to enable column like flex */
+.mobile-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex: 1;
+}
+
 /* Sets the first column in each row to a specific width with righ margin */
 .column-title {
     max-width: 200px;
@@ -141,9 +149,15 @@ nav li a {
     text-align: right;
 }
 
+/* Formats the work in progress */
+.work-in-progress {
+    width:500px;
+    height:100%;
+    margin:auto;
+}
+
 /* Formats alignment of the links in the Contact me */
-.darkLinks {
-    
+.darkLinks {    
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -156,7 +170,46 @@ nav li a {
     border-bottom: 3px solid var(--maintxtColor);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 740px) {
+    
+    /* Formats the Work in progress in mobile screen */
+    .work-in-progress {
+        width:100%;
+        height:100%;
+        margin:auto;
+    }
+
+    /* Clears out the format for the first detail in Contact me */
+    .mobile-wrap > .column-details {
+        border-left: none;
+        padding-left: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Formats mobile wrap container to display links at the bottom correctly */
+    .mobile-wrap {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        border-left: 3px solid var(--maintxtColor);
+        padding-left: 10px;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    .darkLinks > a {
+        border-bottom: none;
+        border: 1px dashed white;
+        width: 80%;
+        color:white;
+        background-color: rgb(49, 99, 99);
+    }
+}
+
+@media screen and (max-width: 630px) {
     
     /* Formats the header in a mobile screen */
     header {
