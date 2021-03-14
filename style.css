@@ -1,14 +1,18 @@
+/* Declare top level variables, to make changes quicker */
 :root {
     --HeaderBgColor: rgb(146, 204, 205);
     --HeaderTxtColor: rgb(50, 53, 62);
     --maintxtColor: rgb(68, 88, 118);
 }
 
+
+/* Sets the whole body background color */
 body {
     background-color: rgb(237, 237, 246);
    /* margin-top: 1000px; /* Added margin-top to test a href links worked */
 }
 
+/* Sets up the header area with flex, space between, items center, padding, background color and text color */
 header {
     display: flex;
     justify-content: space-between;
@@ -135,3 +139,5 @@ nav li a {
     text-decoration: none;
     border-bottom: 3px solid var(--maintxtColor);
 }
+
+@media screen and ()
