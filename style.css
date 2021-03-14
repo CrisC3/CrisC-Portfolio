@@ -155,3 +155,41 @@ nav li a {
     text-decoration: none;
     border-bottom: 3px solid var(--maintxtColor);
 }
+
+@media screen and (max-width: 600px) {
+    
+    /* Formats the header in a mobile screen */
+    header {
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Formats the unordered list in mobile screen */
+    header > nav > ul {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        background-color: rgb(49, 99, 99);
+        
+    }
+
+    /* Formats the list items background and border */
+    header > nav > ul > li {
+        color: white;
+        border: 1px dashed white;
+        line-height: 200%;
+    }
+
+    /* Formats the list items a:href links text color and removes borders */
+    header > nav > ul > li > a {
+        color: white;
+        border-bottom: 0px none;
+    }
+
+    /* Changes the header h1 font size of the Welcome to My Page */
+    .image-text-overlay h1 {
+        font-size: 100%;
+    }
+}
