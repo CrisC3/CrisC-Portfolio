@@ -22,10 +22,12 @@ header {
     color: #fff;
 }
 
+/* Sets all h1 tags font size */
 h1 {
     font-size: 200%;
 }
 
+/* Sets the navigation unordered list to use flex, justify content, minimum width, color and font weight */
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -34,33 +36,39 @@ nav ul {
     font-weight: bold;
 }
 
+/* Formats the appearance of the a:href links in header list items */
 nav li a {
     color: var(--HeaderBgColor);
     text-decoration: none;
     border-bottom: 3px solid var(--HeaderBgColor);
 }
 
+/* Sets the the title text with background and text color only in the header */
 #topTitle {
     background-color: var(--HeaderBgColor);
     color: var(--HeaderTxtColor);
 }
 
+/* Sets the the title text h1 tag color */
 #topTitle h1 {
     color: var(--HeaderTxtColor);
 }
 
+/* Sets the top area, below header, position, align center, and text color white */
 .top-Area {
     position: relative;
     text-align: center;
     color: white;
 }
 
+/* Adjust the top area image(s) child, to specify dimensions and coverage */
 .top-Area > img {
     height: 200px;
     width: 100%;
     object-fit: cover;
 }
 
+/* Set the personal photo div container to a specific area with dimensions*/
 #personal-image {
     position:absolute;
     width: 20px;
@@ -70,13 +78,15 @@ nav li a {
     z-index: 1;
 } 
 
+/* Sets the personal photo to specific height and width, with a border and radius */
 #personal-image img {
     width: 150px;
     height: 150px;
     border: 1px solid #f0270d;
     border-radius: 150px;
-} 
+}
 
+/* Setup the Welcome to My Page, to the bottom right, with specific background and text color */
 .image-text-overlay {
     background-color: var(--HeaderBgColor);
     color: var(--HeaderTxtColor);
@@ -86,12 +96,12 @@ nav li a {
     padding: 10px;
 }
 
+/* Main container, to hold information, sets the margin from top image */
 .container {
-    display: flex;
-    flex-direction: column;
     margin-top: 30px;
 }
 
+/* Generic selector to enable row like flex */
 .row {
     display: inline-flex;
     flex-direction: row;
@@ -99,7 +109,8 @@ nav li a {
     width: 100%;
     margin: 10px;
   }
-  
+
+/* Generic selector to enable column like flex */
 .column {
     display: flex;
     flex-direction: column;
@@ -107,17 +118,20 @@ nav li a {
     flex: 1;
   }
 
+/* Sets the first column in each row to a specific width with righ margin */
 .column-title {
     max-width: 200px;
     margin-right: 10px;
 }
 
+/* Sets the second column in each row to have left border and padding, with justify content */
 .column-details {
     border-left: 3px solid var(--maintxtColor);
     padding-left: 10px;
     justify-content: center;
 }
 
+/* Formats the first column text in each row, spacing and color*/
 .topic-title {
     color: var(--maintxtColor);
     padding-right: 10px;
@@ -127,6 +141,7 @@ nav li a {
     text-align: right;
 }
 
+/* Formats alignment of the links in the Contact me */
 .darkLinks {
     
     align-items: center;
@@ -134,10 +149,9 @@ nav li a {
     text-align: center;
 }
 
+/* Formats the appearance of the a:href links in the Contact me */
 .darkLinks a {
     color: var(--maintxtColor);
     text-decoration: none;
     border-bottom: 3px solid var(--maintxtColor);
 }
-
-@media screen and ()
