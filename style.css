@@ -170,16 +170,10 @@ nav li a {
     border-bottom: 3px solid var(--maintxtColor);
 }
 
+/* Adjust selectors when screen is below 740 pixels */
 @media screen and (max-width: 740px) {
     
-    /* Formats the Work in progress in mobile screen */
-    .work-in-progress {
-        width:100%;
-        height:100%;
-        margin:auto;
-    }
-
-    /* Clears out the format for the first detail in Contact me */
+    /* Clears out the format for the first detail in Contact me in mobile screens */
     .mobile-wrap > .column-details {
         border-left: none;
         padding-left: none;
@@ -187,12 +181,21 @@ nav li a {
         padding: 0;
     }
 
+    /* Formats the Work in progress in mobile screen */
+    .work-in-progress {
+        width:100%;
+        height:100%;
+        margin:auto;
+    }
+
+    /* Readjust row selector for mobile screent */
     .row{
         margin-top: 5px;
         margin-bottom: 5px;
         margin-left: -80px;
     }
 
+    /* Clears out the first column in about me/work/contact me, margin and right padding */
     .topic-title {
         margin: 0px;
         padding-right: 0px;
@@ -211,6 +214,7 @@ nav li a {
         line-height: 40px;
     }
 
+    /* Readjust the contact me links for mobile screen */
     .darkLinks > a {
         border-bottom: none;
         border: 1px dashed white;
