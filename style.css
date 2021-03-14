@@ -254,8 +254,8 @@ nav li a {
 
     /* Changes the header h1 font size of the Welcome to My Page */
     .image-text-overlay {
-        bottom: 20px;
-        right: 20px;
+        bottom: 8%;
+        right: 2%;
         font-size: 50%;
         
     }
