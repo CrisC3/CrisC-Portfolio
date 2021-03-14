@@ -17,5 +17,5 @@ Contact view
 ![Website contact view](./screenshots/section-contactme.png)
 
 ## Link
-Repository  =   https://github.com/CrisC3/CrisCPortfolio
+Repository  =   https://github.com/CrisC3/CrisCPortfolio  
 Deployed    =   https://crisc3.github.io/CrisCPortfolio/
