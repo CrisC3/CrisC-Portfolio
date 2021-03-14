@@ -6,6 +6,7 @@
 
 body {
     background-color: rgb(237, 237, 246);
+    /* margin-top: 1000px; /* Added margin-top to test a href links worked */
 }
 
 header {
@@ -65,19 +66,42 @@ nav li a {
     padding: 10px;
 }
 
-.main-general {
+.container {
     display: flex;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
-.about-me-title {
+.row {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px;
+  }
+  
+.column {
     display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+.column-title {
+    max-width: 200px;
+    margin-right: 10px;
 }
 
-.about-me-title > h1 {
+.column-details {
+    border-left: 3px solid var(--maintxtColor);
+    padding-left: 10px;
+}
+
+.topic-title {
     color: var(--maintxtColor);
-    border-right: 3px solid;
-    margin-left: 100px;
+    padding-right: 10px;
+    margin-left: 80px;
+    margin-bottom: 30px;
     margin-right: 10px;
     text-align: right;
-    padding-right: 10px;
 }
