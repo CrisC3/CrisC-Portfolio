@@ -30,7 +30,7 @@ main {
 .header-main > nav > a {
     color: rgb(146, 204, 205);
     text-decoration: none;
-    margin: auto 1px;
+    margin: auto 0.2rem;
     border-bottom: 3px solid rgb(146, 204, 205);
     font-weight: bold;
 }
@@ -141,29 +141,31 @@ main {
     .header-main, .header-img-msg {
         justify-content: center;
     }
-}
 
-@media screen and (max-width: 630px) {
-    
-   .nav-menu a {
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-        background-color: rgb(49, 99, 99);
-        
+    .header-main nav a {
+        background-color: teal;
         color: white;
+        text-decoration: none;
         border: 1px dashed white;
-        line-height: 40px;
+        padding: 0.5rem 4rem;
     }
 
-    .mobile-wrap a {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-        flex: 1;
-        justify-content: center;
-        width: 100%;
-        line-height: 40px;
+    .contact-me-info {
+        background-color: teal;
+        /* color: white;
+        text-decoration: none; */
+        
+        /*padding: 0.5rem 5rem; */
     }
+
+    .contact-me-info div {
+        border: 1px dashed white;
+    }
+
+    .contact-me-info a {
+        text-decoration: none;
+        color: white;
+    }
+
 }
 /*#endregion */
