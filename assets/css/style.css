@@ -1,0 +1,169 @@
+body {
+    background-color: rgb(237, 237, 246);
+}
+
+header {
+    background-color: #13293d;
+}
+
+main {
+    margin: 10px;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-main > h1 {
+    background-color: rgb(146, 204, 205);
+    border-radius: 10px 15px 5px 12px;
+    margin: 10px 25px;
+}
+
+.header-main > nav {
+    margin-right: 25px;
+}
+
+.header-main > nav > a {
+    color: rgb(146, 204, 205);
+    text-decoration: none;
+    margin: auto 1px;
+    border-bottom: 3px solid rgb(146, 204, 205);
+    font-weight: bold;
+}
+
+.header-img-msg {
+    background-image: url("../images/blue_lines_abstract_material_design.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 310px;
+    width: 100%;
+}
+
+#personal-img {
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #f0270d;
+    border-radius: 150px;
+    margin: 20px 50px;
+}
+
+#greeting-msg {
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+#greeting-msg h1 {
+    background-color: rgb(146, 204, 205);
+    color: rgb(50, 53, 62);
+    margin: auto 25px;
+    padding: 10px;
+}
+
+.col-first {
+    margin: 0px;
+    border-right: 3px solid rgb(68, 88, 118);
+    padding: 0px 10px 0px 0px;
+}
+
+.col-first > h1 {
+    font-size: 200%;
+    text-align: right;
+    color: rgb(68, 88, 118);
+    margin: 0px;
+}
+
+.col-second {
+    max-width: 1060px;
+    margin-left: 10px;
+    border: 0px;
+    padding: 0px;
+}
+
+.col-second > * {
+    margin: 0.2rem;
+}
+
+.col-works {
+    border: 5px solid #1b446bf5;
+    background-size:cover;
+    text-decoration: none;
+    min-height: 150px;
+    max-height: 150px;
+    color: rgba(49, 52, 61, 1);
+}
+
+.col-works div {
+    background-color: rgb(179, 179, 0);
+    border-style: dotted;
+    border-radius: 0px 10px 10px 0px;
+    padding: 2px;
+    margin-bottom: 0.6em;
+}
+
+.col-works-first {
+    margin-right: 2px;
+}
+
+.col-works-second {
+    margin-left: 2px;
+}
+
+.project-01 {
+    background-image: url("../images/Gooberville.png");
+    width: 100%;
+    min-height: 400px;
+}
+
+.password-generator {
+    background-image: url("../images/password-generator.jpg");
+}
+
+.coding-quiz {
+    background-image: url("../images/coding-quiz.jpg");
+}
+
+.workday-scheduler {
+    background-image: url("../images/workday-scheduler.jpg");
+}
+
+.weather-dashboard {
+    background-image: url("../images/weather-dashboard.jpg");
+}
+
+/*#region Mobile media queries */
+@media screen and (max-width: 767px) {
+    .header-main, .header-img-msg {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    
+   .nav-menu a {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(49, 99, 99);
+        
+        color: white;
+        border: 1px dashed white;
+        line-height: 40px;
+    }
+
+    .mobile-wrap a {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        justify-content: center;
+        width: 100%;
+        line-height: 40px;
+    }
+}
+/*#endregion */

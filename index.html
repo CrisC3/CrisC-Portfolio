@@ -4,89 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/iconfinder_dev_1055073.png"/>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Cris Canales</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-    <header>
-        <div id="topTitle">
-            <h1>Cristobal Canales</h1>
-        </div>
-        <nav>
-            <ul>
-                <li class="mobile"><a href="#about-me">About Me</a></li>
-                <li class="mobile"><a href="#work">Work</a></li>
-                <li class="mobile"><a href="#contact-me">Contact Me</a></li>
-                <li class="mobile"><a href="#resume">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
+    
+    <div class="container">
+        <header>
+            <div class="header-main">
+                <h1>Cristobal Canales</h1>
+                <nav class="nav-menu">
+                    <a href="#about-me">About Me</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact-me">Contact Me</a>
+                    <a href="#resume">Resume</a>
+                </nav>
+            </div>
+            <div class="header-img-msg">
+                <img id="personal-img" src="./assets/images/personal.png">
+                <div id="greeting-msg">
+                    <h1 >Welcome to My Page!</h1>
+                </div>
+            </div>
+        </header>
         
-        <div class="top-Area" height="200px">
-            <img src="./images/blue_lines_abstract_material_design.jpg" >
-            <div id="personal-image">
-                <img src="./images/personal.png" alt="Cristobal Canales">                
-            </div>
-            <div class="image-text-overlay">
-                <h1>Welcome to My Page!</h1>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="column column-title">
-                    <div id="about-me" class="topic-title">
+        <main>
+            <section id="about-me">
+                <div class="row">
+                    <div class="col-first col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                         <h1>About<br>Me</h1>
                     </div>
-                </div>
-                <div class="column column-details">
-                    <div class="about-me-details">
-                        
-                        <p>Hello, my name is Cristobal Canales. I was born in Houston. I come from a hispanic background, family originating from El Salvador.</p>
-                        <p>I attended University of Houston and graduated in May of 2013, with a Bachelor of Science in Computer Information Systems.</p>
-                        <p>Work focus has been with upstream oil and gas clients, data aggregation of drilling operations.</p>
+                    <div class="col-second col-8 col-sm-8 col-md-9 col-lg-9 col-xl-9">
+                        <p>Hello, my name is Cristobal Canales. I was born in Houston. I come from a hispanic background, family originating from El Salvador.<br>
+                            I attended University of Houston and graduated in May of 2013, with a Bachelor of Science in Computer Information Systems.<br>
+                            Work focus has been with upstream oil and gas clients, data aggregation of drilling operations.</p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="column column-title">
-                    <div id="work" class="topic-title">
+            </section>
+
+            <section id="work" class="mt-3">
+                <div class="row">
+                    <div class="col-first col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                         <h1>Work</h1>
                     </div>
+                    <div class="col-second d-flex flex-wrap col-8 col-sm-8 col-md-9 col-lg-9 col-xl-9">
+                        <a class="col-works project-01 d-flex align-items-end" href="https://the64man1.github.io/Gooberville-Foods/" target="_blank">
+                            <div>
+                                <h3>Gooberville Foods</h3>
+                                <span>HTML/CSS/JS</span>
+                            </div>
+                        </a>
+                        
+                        <div class="d-flex flex-wrap">
+                            <div class="d-flex flex-fill justify-content-between flex-wrap">
+                                <a class="col-works col-works-first password-generator col d-flex align-items-end" href="https://crisc3.github.io/PasswordGenerator/" target="_blank">
+                                    <div>
+                                        <h3>Password Generator</h3>
+                                        <span>HTML/CSS/JS</span>
+                                    </div>
+                                </a>
+                                <a class="col-works col-works-second coding-quiz col d-flex align-items-end" href="https://crisc3.github.io/CodingQuiz/" target="_blank">
+                                    <div>
+                                        <h3>Coding Quiz</h3>
+                                        <span>HTML/CSS/JS</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="d-flex flex-fill justify-content-between flex-wrap">
+                                <a class="col-works col-works-first workday-scheduler col d-flex align-items-end" href="https://crisc3.github.io/WorkDayScheduler/" target="_blank">
+                                    <div>
+                                        <h3>Work Day Scheduler</h3>
+                                        <span>HTML/CSS/JS</span>
+                                    </div>
+                                </a>
+                                <a class="col-works col-works-second weather-dashboard col d-flex align-items-end" href="https://crisc3.github.io/Weather-Dashboard/" target="_blank">
+                                    <div>
+                                        <h3>Weather Dashboard</h3>
+                                        <span>HTML/CSS/JS</span>
+                                    </div>
+                                </a>      
+                            </div>
+                        </div>                           
+                    </div>
                 </div>
-                <div class="column column-details">
-                    <!-- <p>Coming soon</p> -->
-                    <img class="work-in-progress" src="./images/coming-soon-work-in-progress-computer.png" alt="Coming soon! Work in progress">
-                </div>
-            </div>
-            <div class="row">
-                <div class="column column-title">
-                    <div id="contact-me" class="topic-title">
+            </section>
+
+            <section id="contact-me" class="mt-3">
+                <div class="row">
+                    <div class="col-first col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                         <h1>Contact<br>Me</h1>
                     </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="mobile-wrap col d-flex justify-content-center align-items-center">
+                                <a href="tel:+5555555555">
+                                    <h2>555.555.5555</h2>
+                                </a>
+                            </div>
+                            <div class="mobile-wrap col d-flex justify-content-center align-items-center">
+                                <a href="https://crisc3.github.io/CrisCPortfolio/">
+                                    <h2>crisc3.github.io</h2>
+                                </a>
+                            </div>
+                            <div class="mobile-wrap col d-flex justify-content-center align-items-center">
+                                <a href="https://github.com/crisc3">
+                                    <h2>GitHub</h2>
+                                </a>
+                            </div>
+                            <div class="mobile-wrap col d-flex justify-content-center align-items-center">
+                                <a href="https://www.linkedin.com/in/crisc2">
+                                    <h2>LinkedIn</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mobile-wrap">
-                    <div class="column column-details darkLinks">
-                        <a href="tel:+5555555555"><h2>555.555.5555</h2></a>
-                    </div>
-                    <div class="column darkLinks">
-                        <a href="https://crisc3.github.io/CrisCPortfolio/"><h2>crisc3.github.io</h2></a>
-                    </div>
-                    <div class="column darkLinks">
-                        <a href="https://github.com/crisc3"><h2>GitHub</h2></a>
-                    </div>
-                    <div class="column darkLinks">
-                        <a href="https://www.linkedin.com/in/crisc2"><h2>LinkedIn</h2></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    </main>
-    
+            </section>
+        </main>
+    </div>
 </body>
 </html>
