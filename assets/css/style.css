@@ -1,5 +1,6 @@
 body {
     background-color: rgb(237, 237, 246);
+    padding-bottom: 2rem;
 }
 
 header {
@@ -65,29 +66,29 @@ main {
     padding: 10px;
 }
 
-.col-first {
+.title {
     margin: 0px;
     border-right: 3px solid rgb(68, 88, 118);
     padding: 0px 10px 0px 0px;
 }
 
-.col-first > h1 {
+.title > h1 {
     font-size: 200%;
     text-align: right;
     color: rgb(68, 88, 118);
     margin: 0px;
 }
 
-.col-second {
+/* .col-second {
     max-width: 1060px;
     margin-left: 10px;
     border: 0px;
     padding: 0px;
-}
+} */
 
-.col-second > * {
+/* .col-second > * {
     margin: 0.2rem;
-}
+} */
 
 .col-works {
     border: 5px solid #1b446bf5;
@@ -96,6 +97,7 @@ main {
     min-height: 150px;
     max-height: 150px;
     color: rgba(49, 52, 61, 1);
+    margin: 0.1rem;
 }
 
 .col-works div {
@@ -106,13 +108,13 @@ main {
     margin-bottom: 0.6em;
 }
 
-.col-works-first {
+/* .col-works-first {
     margin-right: 2px;
-}
+} */
 
-.col-works-second {
+/* .col-works-second {
     margin-left: 2px;
-}
+} */
 
 .project-01 {
     background-image: url("../images/Gooberville.png");
@@ -152,10 +154,7 @@ main {
 
     .contact-me-info {
         background-color: teal;
-        /* color: white;
-        text-decoration: none; */
-        
-        /*padding: 0.5rem 5rem; */
+        margin: 0px;
     }
 
     .contact-me-info div {
