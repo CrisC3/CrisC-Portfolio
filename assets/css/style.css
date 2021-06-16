@@ -79,47 +79,45 @@ main {
     margin: 0px;
 }
 
-/* .col-second {
-    max-width: 1060px;
-    margin-left: 10px;
-    border: 0px;
-    padding: 0px;
-} */
+.projects {
+    width: 100% !important;
+    min-height: 400px !important;
+}
 
-/* .col-second > * {
-    margin: 0.2rem;
-} */
+.project-01 {
+    background-image: url("../images/Gooberville.png");
+}
+
+.project-02 {
+    background-image: url("../images/Galleria.jpg");
+}
 
 .col-works {
+    width: 100%;
+}
+
+.col-work {
     border: 5px solid #1b446bf5;
     background-size:cover;
     text-decoration: none;
     min-height: 150px;
     max-height: 150px;
     color: rgba(49, 52, 61, 1);
+    margin: 0.05rem;
+    width: 100%;
+}
+
+.row-works {
+    width: 100%;
     margin: 0.1rem;
 }
 
-.col-works div {
+.col-work div {
     background-color: rgb(179, 179, 0);
     border-style: dotted;
     border-radius: 0px 10px 10px 0px;
     padding: 2px;
     margin-bottom: 0.6em;
-}
-
-/* .col-works-first {
-    margin-right: 2px;
-} */
-
-/* .col-works-second {
-    margin-left: 2px;
-} */
-
-.project-01 {
-    background-image: url("../images/Gooberville.png");
-    width: 100%;
-    min-height: 400px;
 }
 
 .password-generator {
@@ -136,6 +134,14 @@ main {
 
 .weather-dashboard {
     background-image: url("../images/weather-dashboard.jpg");
+}
+
+.note-taker {
+    background-image: url("../images/NoteTaker.jpg");
+}
+
+.tech-blog {
+    background-image: url("../images/techblog.jpg");
 }
 
 /*#region Mobile media queries */
